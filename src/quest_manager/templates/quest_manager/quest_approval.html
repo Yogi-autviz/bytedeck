@@ -56,17 +56,6 @@
 {% endblock %}
 
 {% block js %}
-<script>
-$( document ).ready(function() {
-    $('[id^=btn_quick_text]').on('click', function () {
-        var msg = ' {{ quick_reply_text }} ';
-        var textarea = $($(this).data('target')).find('textarea');
-        textarea.val(textarea.val() + msg);
-    });
-
-    $('[data-toggle="tooltip"]').tooltip();
-});
-</script>
 
 {% include "quest_manager/ajax_content_loading.html" %}
 

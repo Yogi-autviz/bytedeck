@@ -177,7 +177,6 @@
           </ul>
         </div>
       </li>
-
     </div>
     <div class="d-none d-sm-block drop-down-2">
       <ul class="navbar-nav  ">
@@ -236,8 +235,8 @@
           </div>
           <li id="profile" class="nav-item">
             <a title="Profile" class="nav-link me-3" href="{% url 'profiles:profile_detail' request.user.profile.id %}">
-              <img height="30" class="navbar-avatar me-2" src="{{ request.user.profile.get_avatar_url }}">{{
-              request.user }}
+              <img height="30" class="navbar-avatar me-2" src="{{ request.user.profile.get_avatar_url }}">Admin
+
             </a><!-- removes whitespace-->
           </li>
           {% if not request.user.is_staff %}
