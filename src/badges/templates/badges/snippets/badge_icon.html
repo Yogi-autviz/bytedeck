@@ -1,11 +1,12 @@
-<div class="thumbnail thumbnail-badge">
+<div class="thumbnail thumbnail-badge align-items-center d-flex py-2">
                   {% if not badge.active %}
                       <i class="fa fa-2x fa-eye-slash pull-right text-danger" style="position:absolute;"></i>
                   {% endif %}
                   <img class="hackerbadge img-rounded
                       {% if not badge in earned_badges %} hackerbadge-unearned {% endif %}"
-                      src="{{badge.get_icon_url}}" alt="badge icon">
-                  <div class="caption caption-badge text-center">
+                      src="{{badge.get_icon_url}}" alt="badge icon" height="70">
+                  <div class="caption caption-badge text-center justify-content-end d-flex w-100">
                       {{badge.name}}
                   </div>
               </div>
+
